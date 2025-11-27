@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Exercise</title>
+    <style>
+        table {
+          border-collapse: collapse; /* optional, for nicer borders */
+          width: 80%;
+        }
+
+        th, td {
+          padding: 8px;
+          text-align: left;
+        }
+
+        /* Remove borders for tbody rows */
+        .borderless td {
+          border: none;
+        }
+
+        /* Add borders for the header/footer */
+        thead th{
+          text-align: left;
+          border: 1px solid black;
+          background-color: rgb(225, 224, 224);
+        }
+
+        tfoot td {
+          text-align: right;
+          background-color: rgb(225, 224, 224);
+        }
+      </style>
+  </head>
+  <body>
+    <h1>Student Exercise</h1>
+     <table border="1" cellpadding="10" cellspacing="5">
+        <thead>
+          <!-- 1st row header -->
+          <tr>
+            <th colspan="3">Transform</th>
+          </tr>
+        </thead>
+        <tbody class="borderless">
+          <!-- 2nd row -->
+          <tr>
+            <td colspan="2">Name:</td>
+            <td colspan="2"><input type="text" id="name" name="name" required placeholder="Enter your name:"/></td>
+           
+          </tr>
+          <!-- 3rd row -->
+          <tr>
+            <td colspan="2">Password:</td>
+            <td colspan="2"><input type="password" id="password" name="password" required placeholder="Enter your password:"/></td>
+           
+          </tr>
+          <!-- 4th row -->
+          <tr>
+            <td colspan="2">Gender:</td>
+            <td colspan="2">
+              <input type="radio" id="male" name="gender" value="male" required />
+              <label for="male">Male</label><br>
+              <input type="radio" id="female" name="gender" value="female" required />
+              <label for="female">Female</label>
+            </td>
+          
+          </tr>
+          <!-- 5th row -->
+          <tr>
+            <td colspan="2">Continent:</td>
+            <td colspan="2">
+              <select id="continent" name="continent" required>
+                <option value="" disabled selected>Please select...</option>
+                <option value="africa">Africa</option>
+                <option value="antarctica">Antarctica</option>
+                <option value="asia">Asia</option>
+                <option value="australia">Australia</option>
+                <option value="europe">Europe</option>
+                <option value="north-america">North America</option>
+                <option value="south-america">South America</option>
+              </select>
+            </td>
+          </tr>
+          <!-- 6th row -->
+          <tr>
+            <td colspan="2">Meals:</td>
+            <td colspan="2">
+              <input type="checkbox" id="breakfast" name="meals" value="breakfast" />
+              <label for="breakfast">Breakfast</label><br>  
+              <input type="checkbox" id="lunch" name="meals" value="lunch" />
+              <label for="lunch">Lunch</label><br>
+              <input type="checkbox" id="dinner" name="meals" value="dinner" />
+              <label for="dinner">Dinner</label>
+            </td>
+          </tr> 
+          <!-- 7th row -->
+          <tr>
+            <td colspan="2">Remark:</td>
+            <td colspan="2"><textarea id="remark" name="remark" rows="3" cols="30" placeholder="Enter your remarks here..."></textarea></td>
+          </tr> 
+          <!-- 8th row -->
+           <tfoot>
+            <tr>
+              <td colspan="3">
+                <input type="submit" value="Send" />
+                <input type="reset" value="Cancel" />
+              </td>
+            </tr>
+           </tfoot>
+    
+        </tbody>
+      </table>
+
+      
+  </body>
+</html>
