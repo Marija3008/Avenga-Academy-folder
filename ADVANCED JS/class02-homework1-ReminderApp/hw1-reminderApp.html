@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="text" id="title" placeholder="Title" />
+    <br /><br />
+    <input type="text" id="priority" placeholder="Priority" />
+    <br /><br />
+    <input type="color" id="color" />
+    <br /><br />
+    <textarea id="description" placeholder="Description"></textarea>
+    <br /><br />
+
+    <button id="addBtn">Add Reminder</button>
+    <button id="showBtn">Show Reminders</button>
+    <br /><br />
+
+    <!--za generiranje tabela i toa kako moze da se vmetnat podatocite tuka koristev AI bidejki ne bev potpolno sigurna kako mozam da go napravam toa  -->
+    <table id="reminderTable" border="1">
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>Priority</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- JavaScript inserts rows here -->
+      </tbody>
+    </table>
+
+    <script src="hw1-reminderApp.js"></script>
+  </body>
+</html>
