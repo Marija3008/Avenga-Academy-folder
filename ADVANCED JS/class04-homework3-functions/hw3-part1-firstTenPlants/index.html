@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- CSS files are typically linked in the <head> section of your HTML. This ensures that styles are loaded and applied before the page is rendered,giving users a smooth visual experience. -->
+  </head>
+  <body>
+
+    <button id="getPlanets">Get Planets</button>
+
+    <table id="table">
+      <thead>
+        <tr>
+          <th>Planet Name</th>
+          <th>Population</th>
+          <th>Climate</th>
+          <th>Gravity</th>
+        </tr>
+      </thead>
+      <tbody id="tableBody">
+        <!-- rows will be added here -->
+      </tbody>
+    </table>
+
+    <script src="script.js"></script>
+    <!-- JS last → Prevents scripts from blocking HTML parsing and CSS rendering. If JavaScript is loaded too early, it can delay page rendering or try to manipulate elements that haven’t been created yet. -->
+  </body>
+</html>

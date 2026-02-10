@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <button id="getPlanets">Get Planets</button>
+
+    <table id="table">
+      <thead>
+        <tr>
+          <th>Planet Name</th>
+          <th>Population</th>
+          <th>Climate</th>
+          <th>Gravity</th>
+        </tr>
+      </thead>
+      <tbody id="tableBody">
+        <!-- rows will be added here -->
+      </tbody>
+    </table>
+    <br><br>
+
+    <!-- before clicking get plants button this two buttons are not visible, that is why they have display:none propertie -->
+    <button id="nextBtn" style="display: none">NEXT 10</button>
+    <!-- after clicking get plants button this button (next 10) is visible -->
+    <button id="prevBtn" style="display: none">PREVIOUS 10</button>
+    <!-- after clicking next 10 button this button (previous 10) is visible -->
+    
+    <script src="script.js"></script>
+  </body>
+</html>
