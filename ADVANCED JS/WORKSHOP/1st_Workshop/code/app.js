@@ -125,7 +125,7 @@ function showHourly() {
 function showAbout(){
   app.innerHTML = "<h2>About WeatherAlert</h2>" +
                   "<p>This app shows upcoming weather data using OpenWeatherMap API.</p>" +
-                  "<p><strong>Creator:</strong> Your Name</p>" +
+                  "<p><strong>Creator:</strong> Avenga Academy Student</p>" +
                   "<p><strong>Contact:</strong> your@email.com</p>";
 }
 
