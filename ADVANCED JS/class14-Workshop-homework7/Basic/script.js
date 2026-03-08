@@ -1,11 +1,8 @@
-const url =
-  "https://github.com/aa-codecademy/mkwd14-03-ajs-and-ai/blob/1eebef9617dda87a1fa2a78dbb73408ed3bfc246/G3/Homeworks/Workshop-homework/cars/cars.json";
-
 async function fetchCars() {
   try {
-    const response = await fetch(url);
+    const response = await fetch("cars.json");
     const data = await response.json();
-    const cars = data.cars;
+    const cars = data;
 
     //console log cars data
     //console.log(cars);
@@ -25,7 +22,7 @@ function logCars(cars) {
 
 //func to display the cars in the table
 function displayCars(cars) {
-  tableBody = document.querySelector("#carsTabele tbody");
+  tableBody = document.querySelector("#carsTable tbody");
 
   cars.forEach((car) => {
     const row = document.createElement("tr");
@@ -39,6 +36,7 @@ function displayCars(cars) {
       <td>${car.isNew}</td>
       <td>${car.horsepower}</td>
        `;
+    tableBody.appendChild(row);
   });
 }
 
