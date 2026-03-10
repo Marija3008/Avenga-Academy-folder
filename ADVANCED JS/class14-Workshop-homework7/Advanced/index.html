@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Car Marketplace Filters</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h2>Filter Cars</h2>
+
+    <!-- Type Filter -->
+    <h3>By Type</h3>
+    <select id="typeFilter">
+      <option value="">All</option>
+      <option value="SUV">SUV</option>
+      <option value="Sedan">Sedan</option>
+      <option value="Hatchback">Hatchback</option>
+      <option value="Convertible">Convertible</option>
+      <option value="Truck">Truck</option>
+      <option value="Coupe">Coupe</option>
+    </select>
+
+    <!-- Brand Filter -->
+    <h3>By Brand</h3>
+    <select id="brandFilter">
+      <option value="">All</option>
+      <option value="Volkswagen">Volkswagen</option>
+      <option value="Toyota">Toyota</option>
+      <option value="Ford">Ford</option>
+      <option value="BMW">BMW</option>
+      <option value="Chevrolet">Chevrolet</option>
+      <option value="Mercedes-Benz">Mercedes-Benz</option>
+      <option value="Honda">Honda</option>
+      <option value="Nissan">Nissan</option>
+      <option value="Hyundai">Hyundai</option>
+      <option value="Mazda">Mazda</option>
+      <option value="Ram">Ram</option>
+      <option value="Audi">Audi</option>
+      <option value="Kia">Kia</option>
+      <option value="Subaru">Subaru</option>
+      <option value="Fiat">Fiat</option>
+    </select>
+
+    <!-- Model Filter -->
+    <h3>By Model</h3>
+    <input type="text" id="modelFilter" placeholder="Enter model">
+
+    <!-- Doors Filter -->
+    <h3>By Doors</h3>
+    <input type="number" id="doorsFilter" placeholder="Number of doors">
+
+    <!-- Gas Type Filter -->
+    <h3>By Gas Type</h3>
+    <select id="gasFilter">
+      <option value="">All</option>
+      <option value="Petrol">Petrol</option>
+      <option value="Diesel">Diesel</option>
+      <option value="Gasoline">Gasoline</option>
+      <option value="Hybrid">Hybrid</option>
+      <option value="Electric">Electric</option>
+    </select>
+
+    <!-- Color Filter -->
+    <h3>By Color</h3>
+    <input type="text" id="colorFilter" placeholder="Enter color">
+
+    <!-- Condition Filter -->
+    <h3>Condition</h3>
+    <label>
+      <input type="radio" name="condition" value="true"> New
+    </label>
+    <label>
+      <input type="radio" name="condition" value="false"> Used
+    </label>
+
+    <!-- Horsepower Filter -->
+    <h3>Minimum Horsepower</h3>
+    <input type="number" id="hpFilter" placeholder="Horsepower">
+
+    <!-- Search Button -->
+    <br><br>
+    <button id="searchBtn">Search</button>
+
+    <!-- Cars Table -->
+    <h2>Cars List</h2>
+    <table id="carsTable" border="1">
+      <thead>
+        <tr>
+          <th>Type</th>
+          <th>Brand</th>
+          <th>Model</th>
+          <th>Doors</th>
+          <th>Gas Type</th>
+          <th>Color</th>
+          <th>Condition</th>
+          <th>Horsepower</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+
+    <script src="script.js"></script>
+  </body>
+</html>
